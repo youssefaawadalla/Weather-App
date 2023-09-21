@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <div class="card">
+    <div class="welcome">
+      <h1>Weather App</h1>
+      <p>Get the latest weather information for your city</p>
+    </div>    
+    <div class="search">
+      <input type="text" placeholder="Enter the city" spellcheck="false">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="error">
+      <p>City not found. Please try again.</p>
+    </div>
+    <div class="weather">
+      <img src="" class="weather-icon">
+      <h2 class="temp">°C</h2>
+      <h3 class="city"></h3>
+      <div class="details">
+        <div class="humidity-section">
+          <img src="images/humidity.png">
+          <div>
+            <p class="humidity">%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="wind-section">
+          <img src="images/wind.png">
+          <div>
+            <p class="wind">km/h</p>
+            <p>Wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="credit">
+      <p>Developed by Youssef Ahmed Awadalla</p>
+    </div>             
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

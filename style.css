@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  padding: 10px;
+  background: url(images/background.jpg) no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card{
+  background: linear-gradient(90deg, #0083b0, #00b4db);
+  color: #fff;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.welcome h1{
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.welcome p{
+  font-size: 0.9rem;
+  color: #eee;
+  letter-spacing: 0.5px;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.search input{
+  border: 0;
+  outline: 0;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search button{
+  border: 0;
+  outline: 0;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search button i{
+  color: #0083b0;
+  font-size: 1.1rem;
+}
+
+.search button:hover{
+  background-color: #00b4db;
+}
+
+.error{
+  background-color: #ff6666;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+  margin-top: 10px;
+}
+
+.error p{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.weather{
+  margin-top: 20px;
+  display: none;
+}
+
+.weather-icon{
+  width: 200px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.temp{
+  font-size: 2rem;
+}
+
+.city{
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: #ddd;
+}
+
+.details{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.humidity-section,
+.wind-section{
+  display: flex;
+  align-items: center;
+}
+
+.humidity-section img,
+.wind-section img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.humidity-section p,
+.wind-section p{
+  font-size: 0.9rem;
+}
+
+.credit{
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.credit p{
+  font-size: 0.9rem;
+  color: #013647;
+  letter-spacing: 0.5px;
+}
